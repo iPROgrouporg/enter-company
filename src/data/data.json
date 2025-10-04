@@ -1,74 +1,182 @@
 [
   {
     "id": 1,
-    "title": "Dell PowerEdge T40 Server",
-    "desc": "Reliable entry-level server for small business hosting and file storage.",
-    "price": 750,
-    "image": "./images/Image2.png",
-    "rating": 5,
-    "category": "Servers"
+    "title": "Chotka",
+    "desc": "Uy va ofis tozalash uchun mo‘ljallangan universal cho‘tka to‘plami. Sirtlarni chang, kir va bo‘yoqlardan tozalashda ishlatiladi.",
+    "razmer": "Standart",
+    "upakovka": "1 dona",
+    "artikul": "SH-001",
+    "image": ["./images/chang_shutka.jpg","./images/kiyim_shutka.jpg","./images/ohak_shutka.jpg","./images/tortonak_shutka.jpg","./images/shutka_dastalik.jpg","./images/shutka_kachuk.jpg","./images/shutka_kiyim.jpg","./images/shutka_nikel.jpg","./images/shutka_nikel2.jpg","./images/shutka_nikel3.jpg","./images/shutka.jpg","./images/tufli_shutka.jpg","./images/unitaz_shutka.jpg","./images/unitaz_shutka2.jpg"],
+    "category": "Tozalash vositalari"
   },
   {
     "id": 2,
-    "title": "MikroTik Cloud Router",
-    "desc": "Powerful router for stable internet and network management.",
-    "price": 210,
-    "image": "./images/Image2.png",
-    "rating": 4,
-    "category": "Networking"
+    "title": "Pichoqlar",
+    "desc": "Oshxona uchun sifatli pichoqlar to‘plami — meva, sabzavot va umumiy foydalanish uchun qulay.",
+    "razmer": "15–20 sm",
+    "upakovka": "1 to‘plam (2 dona)",
+    "artikul": "PCH-002",
+    "image": ["./images/meva_pichoq.jpg","./images/pichoq_salativiy.jpg"],
+    "category": "Oshxona anjomlari"
   },
   {
     "id": 3,
-    "title": "WD Red Pro NAS HDD 4TB",
-    "desc": "High-performance hard drive designed for 24/7 storage servers.",
-    "price": 180,
-    "image": "./images/Image2.png",
-    "rating": 5,
-    "category": "Storage"
+    "title": "Hukandoz Nabor taroq",
+    "desc": "Soch tarash uchun mo‘ljallangan hukandoz va taroq to‘plami. Sartaroshxona va uy sharoitida foydalanish uchun qulay.",
+    "razmer": "Standart",
+    "upakovka": "1 to‘plam",
+    "artikul": "HN-003",
+    "image": ["./images/hukandoz_nabor_taroq.jpg"],
+    "category": "Shaxsiy gigiyena"
   },
   {
     "id": 4,
-    "title": "Ubiquiti UniFi Access Point",
-    "desc": "Professional Wi-Fi access point with high coverage and speed.",
-    "price": 150,
-    "image": "./images/Image2.png",
-    "rating": 4,
-    "category": "Networking"
+    "title": "Dush uchun Karnez",
+    "desc": "Hammom uchun metall karnez. Dush pardasini osish uchun mo‘ljallangan bardoshli va zanglamaydigan model.",
+    "razmer": "160–240 sm (sozlanadigan)",
+    "upakovka": "1 dona",
+    "artikul": "KX-004",
+    "image": ["./images/karnez_xammom.jpg"],
+    "category": "Hammom jihozlari"
   },
   {
     "id": 5,
-    "title": "Lenovo ThinkStation P340",
-    "desc": "Powerful workstation for design, development, and server monitoring.",
-    "price": 950,
-    "image": "./images/Image2.png",
-    "rating": 5,
-    "category": "Computers"
+    "title": "Kurak universal",
+    "desc": "Qor, qum yoki chiqindilarni yig‘ish uchun mo‘ljallangan mustahkam metall kurak. Qishki mavsumda ham foydali.",
+    "razmer": "40x35 sm",
+    "upakovka": "1 dona",
+    "artikul": "KU-005",
+    "image": ["./images/kurak_universal.jpg"],
+    "category": "Qurilish mollari"
   },
   {
     "id": 6,
-    "title": "APC Smart-UPS 1500VA",
-    "desc": "Uninterruptible power supply to protect your servers from power loss.",
-    "price": 320,
-    "image": "./images/Image2.png",
-    "rating": 5,
-    "category": "Power"
+    "title": "Molyarniy Skoch",
+    "desc": "Bo‘yash ishlarida chegaralarni himoya qilish uchun mo‘ljallangan malyar lenta. Yopishqoq va iz qoldirmaydi.",
+    "razmer": "25 mm x 50 m",
+    "upakovka": "1 dona",
+    "artikul": "MS-006",
+    "image": ["./images/malyarniy_skoch.jpg"],
+    "category": "Malyarniy mahsulotlar"
   },
   {
     "id": 7,
-    "title": "Intel Xeon E-2236 Processor",
-    "desc": "High-performance CPU for data centers and virtualization tasks.",
-    "price": 430,
-    "image": "./images/Image2.png",
-    "rating": 4,
-    "category": "Components"
+    "title": "Mator 202",
+    "desc": "Changyutkich uchun mo‘ljallangan universal motor. Turli modellarga mos keladi va energiya tejamkor.",
+    "razmer": "202 modeli",
+    "upakovka": "1 dona",
+    "artikul": "MT-007",
+    "image": ["./images/mator202.jpg"],
+    "category": "Maishiy texnika"
   },
   {
     "id": 8,
-    "title": "Synology NAS DS920+",
-    "desc": "4-bay network storage for backup, file sharing, and small-scale hosting.",
-    "price": 670,
-    "image": "./images/Image2.png",
-    "rating": 5,
-    "category": "Storage"
+    "title": "Obuv Polka",
+    "desc": "Poyabzal uchun metall yoki plastmassa polka — uyda tartib saqlash uchun mo‘ljallangan.",
+    "razmer": "60x30x50 sm",
+    "upakovka": "1 dona",
+    "artikul": "OP-008",
+    "image": ["./images/obuv_polka.jpg","./images/obuv_polka2.jpg"],
+    "category": "Uy-ro‘zg‘or buyumlari"
+  },
+  {
+    "id": 9,
+    "title": "Pastavka",
+    "desc": "Hammom va oshxona uchun mo‘ljallangan universal pastavka. Sabun, salfetka yoki idishlar uchun ishlatiladi.",
+    "razmer": "20x15x10 sm",
+    "upakovka": "1 dona",
+    "artikul": "PS-009",
+    "image": ["./images/pastavka_hammom.jpg","./images/salfetka_pastavka.jpg","./images/salfetka_pastavka2.jpg","./images/savun+padstafka.jpg","./images/xammom_padstavka.jpg","./images/xammom_padstavka2.jpg"],
+    "category": "Hammom jihozlari"
+  },
+  {
+    "id": 10,
+    "title": "Pelesos ruchnoy",
+    "desc": "Qo‘lda ishlatiladigan mini changyutkich. Kichik joylarni tez tozalash uchun juda qulay.",
+    "razmer": "Kompakt",
+    "upakovka": "1 dona",
+    "artikul": "PR-010",
+    "image": ["./images/Pelesos_ruchnoy.jpg"],
+    "category": "Maishiy texnika"
+  },
+  {
+    "id": 11,
+    "title": "Shvabra",
+    "desc": "Pol yuvish uchun mo‘ljallangan teleskopik dastali shvabra. Yumshoq matosi bilan suvni yaxshi shimadi.",
+    "razmer": "120 sm",
+    "upakovka": "1 dona",
+    "artikul": "SHV-011",
+    "image": ["./images/shavabra_sochiq.jpg","./images/shvabra_dasta.jpg"],
+    "category": "Tozalash vositalari"
+  },
+  {
+    "id": 12,
+    "title": "Chotka Malyarni",
+    "desc": "Bo‘yash ishlarida ishlatiladigan keng mo‘yli malyar cho‘tka. Yog‘och va devor yuzalari uchun ideal.",
+    "razmer": "70 mm",
+    "upakovka": "1 dona",
+    "artikul": "SM-012",
+    "image": ["./images/shyotka_malyarni.jpg"],
+    "category": "Malyarniy mahsulotlar"
+  },
+  {
+    "id": 13,
+    "title": "Supurgi",
+    "desc": "Uy va ofis uchun mo‘ljallangan sintetik tolali supurgi. Changni yaxshi yig‘adi va bardoshli.",
+    "razmer": "Standart",
+    "upakovka": "1 dona",
+    "artikul": "SP-013",
+    "image": ["./images/supurgi_sovok.jpg","./images/supurgi_yapaloq.jpg","./images/supurgi.jpg","./images/supurgi2.jpg","./images/supurgi3.jpg"],
+    "category": "Tozalash vositalari"
+  },
+  {
+    "id": 14,
+    "title": "Uzaytirgich",
+    "desc": "Elektr qurilmalari uchun uzatma kabel (udlinitel). Uy va ofisda foydalanish uchun qulay.",
+    "razmer": "3–5 metr",
+    "upakovka": "1 dona",
+    "artikul": "UD-014",
+    "image": ["./images/udlinitel.jpg"],
+    "category": "Elektr jihozlari"
+  },
+  {
+    "id": 15,
+    "title": "Topli Zajim",
+    "desc": "Qog‘oz va hujjatlarni mahkamlash uchun metall zajim. Ofis va o‘quv joylari uchun mo‘ljallangan.",
+    "razmer": "32 mm",
+    "upakovka": "12 dona",
+    "artikul": "TZ-015",
+    "image": ["./images/topli_zajim.jpg"],
+    "category": "Ofis anjomlari"
+  },
+  {
+    "id": 16,
+    "title": "Axlat qutisi",
+    "desc": "Plastmassa chiqindi idishi — ofis, hammom va oshxona uchun qulay model.",
+    "razmer": "10 litr",
+    "upakovka": "1 dona",
+    "artikul": "UR-016",
+    "image": ["./images/urna_gulli.jpg","./images/urna_mayda.jpg","./images/urna.jpg","./images/urna2.jpg"],
+    "category": "Tozalash vositalari"
+  },
+  {
+    "id": 17,
+    "title": "Valiklar",
+    "desc": "Bo‘yash uchun mo‘ljallangan yuqori sifatli valiklar. Har xil yuzalar uchun mos.",
+    "razmer": "180 mm",
+    "upakovka": "1 dona",
+    "artikul": "VL-017",
+    "image": ["./images/valik_dekort.jpg","./images/valik_kok.jpg","./images/valik_palasa.jpg","./images/valik_qizil.jpg","./images/valik_zebra.jpg","./images/valik2.jpg"],
+    "category": "Malyarniy mahsulotlar"
+  },
+  {
+    "id": 18,
+    "title": "Gel idish",
+    "desc": "Suyuq sovun yoki gel uchun mo‘ljallangan dispenser idish. Oshxona va hammomda foydalanish uchun mos.",
+    "razmer": "500 ml",
+    "upakovka": "1 dona",
+    "artikul": "GI-018",
+    "image": ["./images/gel_idish.jpg"],
+    "category": "Hammom jihozlari"
   }
 ]

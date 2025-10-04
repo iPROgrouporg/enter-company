@@ -1,41 +1,21 @@
-import { useEffect, useState } from "react";
-import { IoSearchOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 import Productlar from "../data/data.json";
 
-const Products = () => {
-  const [filtered, setFiltered] = useState([]);
-  const [search, setSearch] = useState("");
-  const [category, setCategory] = useState("All");
-  const [currentIndex, setCurrentIndex] = useState({}); // Har bir mahsulot uchun index
+const HomeTopSelling = () => {
+  const [currentIndex, setCurrentIndex] = useState({});
 
-  // Dinamik kategoriyalar
-  const categories = ["All", ...new Set(Productlar.map((item) => item.category))];
+  // Faqat 4ta mahsulotni olamiz
+  const topProducts = Productlar.slice(0, 4);
 
-  // Filter va search ishlovchi logika
+  // Boshlang‘ich indexlarni sozlaymiz
   useEffect(() => {
-    let result =
-      category === "All"
-        ? Productlar
-        : Productlar.filter(
-            (item) => item.category.toLowerCase() === category.toLowerCase()
-          );
-
-    if (search.trim() !== "") {
-      result = result.filter((item) =>
-        item.title.toLowerCase().includes(search.toLowerCase())
-      );
-    }
-
-    setFiltered(result);
-
-    // carousel indexlarini 0 qilib yangilaymiz
     const initialIndexes = {};
-    result.forEach((item) => (initialIndexes[item.id] = 0));
+    topProducts.forEach((item) => (initialIndexes[item.id] = 0));
     setCurrentIndex(initialIndexes);
-  }, [category, search]);
+  }, []);
 
-  // Carousel uchun funksiyalar
   const nextImage = (id, total) => {
     setCurrentIndex((prev) => ({
       ...prev,
@@ -51,53 +31,20 @@ const Products = () => {
   };
 
   return (
-    <section className="min-h-screen bg-[#0e0e0e] py-16 px-6">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-          Bizning Mahsulotlar
-        </h1>
-        <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-          Qurilish, tozalash va maishiy ishlarda kerakli barcha asbob-uskunalar
-          bizda mavjud.
-        </p>
-      </div>
-
-      <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-10 max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-center gap-3">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setCategory(cat)}
-              className={`px-5 py-2 rounded-full cursor-pointer text-sm font-medium transition-all duration-300 ${
-                category === cat
-                  ? "bg-amber-500 text-white shadow-md scale-105"
-                  : "bg-white/10 backdrop-blur-md text-gray-200 hover:bg-white/20"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+    <section className="w-full py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-extrabold text-white mb-4">
+            Our Top Selling
+          </h2>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Check out our most popular products that customers love the most.
+          </p>
         </div>
 
-        <div className="relative w-full md:w-64">
-          <IoSearchOutline
-            size={20}
-            className="absolute left-4 top-3.5 text-gray-400"
-          />
-          <input
-            type="text"
-            placeholder="Mahsulot izlash..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 rounded-full bg-white/10 backdrop-blur-md text-white placeholder-gray-400 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-500"
-          />
-        </div>
-      </div>
-
-      {filtered.length > 0 ? (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {filtered.map((item) => (
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {topProducts.map((item) => (
             <div
               key={item.id}
               className="group bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 hover:shadow-green-700/30 hover:scale-[1.02]"
@@ -180,13 +127,19 @@ const Products = () => {
             </div>
           ))}
         </div>
-      ) : (
-        <p className="text-gray-400 text-center text-lg mt-10">
-          Qidiruv bo‘yicha hech qanday mahsulot topilmadi.
-        </p>
-      )}
+
+        {/* Barcha mahsulotlar tugmasi */}
+        <div className="text-center mt-12">
+          <Link
+            to="/products"
+            className="border border-white/30 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white/20 transition-all"
+          >
+            Barcha Mahsulotlar
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };
 
-export default Products;
+export default HomeTopSelling;

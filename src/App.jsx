@@ -18,13 +18,14 @@ const App = () => {
   return (
     <div className="relative min-h-screen container mx-auto">
       <Header />
-      <main className="bg-[rgb(25,33,22)]">
+      <main className="bg-[#0e0e0e]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
+      <hr className="h-[1px] bg-gray-500" />
       <Footer />
       <div className="fixed bottom-10 right-10 z-50 flex flex-col items-center">
         <div
