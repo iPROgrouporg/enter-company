@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="container mx-auto bg-[rgb(25,33,22)] sticky top-0 z-50">
+    <header className=" bg-[rgb(25,33,22)] sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
         <div className="flex items-center gap-2">
           <img

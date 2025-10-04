@@ -16,9 +16,9 @@ const App = () => {
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen container mx-auto">
       <Header />
-      <main className="bg-[rgb(25,33,22)] container mx-auto">
+      <main className="bg-[rgb(25,33,22)]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
