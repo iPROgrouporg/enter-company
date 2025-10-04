@@ -1,4 +1,11 @@
-import { IoLeafOutline, IoPeopleOutline, IoGlobeOutline, IoCall, IoMail, IoLocation } from "react-icons/io5";
+import {
+  IoLeafOutline,
+  IoPeopleOutline,
+  IoGlobeOutline,
+  IoCall,
+  IoMail,
+  IoLocation,
+} from "react-icons/io5";
 
 const About = () => {
   return (
@@ -8,9 +15,10 @@ const About = () => {
           About <span className="text-green-400">ENTER MCHJ</span>
         </h1>
         <p className="text-gray-300 max-w-3xl mx-auto text-lg">
-          ENTER MCHJ — tabiiy o‘simliklar orqali yashil muhit yaratish va insonlar hayotiga
-          tinchlik olib kirish maqsadida tashkil etilgan korxona.
-          Bizning jamoamiz ekologiyani asrab-avaylash va go‘zal o‘simliklarni yetkazib berishga sodiqdir.
+          ENTER MCHJ — tabiiy o‘simliklar orqali yashil muhit yaratish va
+          insonlar hayotiga tinchlik olib kirish maqsadida tashkil etilgan
+          korxona. Bizning jamoamiz ekologiyani asrab-avaylash va go‘zal
+          o‘simliklarni yetkazib berishga sodiqdir.
         </p>
       </div>
 
@@ -80,14 +88,18 @@ const About = () => {
                 />
                 <h4 className="text-white font-semibold">{review.name}</h4>
               </div>
-              <p className="text-gray-300 text-sm leading-relaxed">{review.text}</p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {review.text}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-white mb-10">Biz bilan bog‘laning</h2>
+        <h2 className="text-4xl font-bold text-white mb-10">
+          Biz bilan bog‘laning
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-8 mb-10">
           <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-md">
@@ -107,7 +119,9 @@ const About = () => {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-md">
             <IoLocation size={36} className="text-green-400 mx-auto mb-3" />
             <h4 className="text-white font-semibold mb-2">Manzil</h4>
-            <p className="text-gray-300">Toshkent shahri, Yunusobod tumani, Bog‘ishamol 24</p>
+            <p className="text-gray-300">
+              Toshkent shahri, Yunusobod tumani, Bog‘ishamol 24
+            </p>
           </div>
         </div>
 

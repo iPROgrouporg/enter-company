@@ -27,7 +27,7 @@ const Home = () => {
   ];
 
   const handleNext = () => {
-      setCurrent((prev) => (prev + 1) % products.length);
+    setCurrent((prev) => (prev + 1) % products.length);
   };
 
   const handlePrev = () => {
@@ -93,28 +93,26 @@ const Home = () => {
           </div>
 
           <div className="w-full md:w-[400px] flex flex-col items-center">
-            <div
-              className="relative w-full rounded-2xl shadow-2xl p-5 flex flex-col items-center bg-white/10 backdrop-blur-xl border border-white/20 transition"
-            >
+            <div className="relative w-full rounded-2xl shadow-2xl p-5 flex flex-col items-center bg-white/10 backdrop-blur-xl border border-white/20 transition">
               <>
-                  <img
-                    src={products[current].img}
-                    alt={products[current].title}
-                    className="w-full h-64 object-cover rounded-xl"
-                  />
-                  <div className="mt-6 space-y-3 text-center">
-                    <h2 className="text-2xl font-bold text-white">
-                      {products[current].title}
-                    </h2>
-                    <p className="text-gray-50">{products[current].desc}</p>
-                    <Link
-                      to="/products"
-                      className="border border-white/20 text-white cursor-pointer px-6 py-2 rounded-lg font-medium"
-                    >
-                      Barcha Mahsulotlar
-                    </Link>
-                  </div>
-                </>
+                <img
+                  src={products[current].img}
+                  alt={products[current].title}
+                  className="w-full h-64 object-cover rounded-xl"
+                />
+                <div className="mt-6 space-y-3 text-center">
+                  <h2 className="text-2xl font-bold text-white">
+                    {products[current].title}
+                  </h2>
+                  <p className="text-gray-50">{products[current].desc}</p>
+                  <Link
+                    to="/products"
+                    className="border border-white/20 text-white cursor-pointer px-6 py-2 rounded-lg font-medium"
+                  >
+                    Barcha Mahsulotlar
+                  </Link>
+                </div>
+              </>
             </div>
 
             <div className="flex gap-6 mt-6">
@@ -210,9 +208,7 @@ const Home = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-6 text-center space-y-3">
-                <h3 className="text-xl font-bold text-white">
-                  Cal 874 plant
-                </h3>
+                <h3 className="text-xl font-bold text-white">Cal 874 plant</h3>
                 <p className="text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias, laudantium?
@@ -235,9 +231,7 @@ const Home = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-6 text-center space-y-3">
-                <h3 className="text-xl font-bold text-white">
-                  Cal 874 plant
-                </h3>
+                <h3 className="text-xl font-bold text-white">Cal 874 plant</h3>
                 <p className="text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias, laudantium?
@@ -260,9 +254,7 @@ const Home = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-6 text-center space-y-3">
-                <h3 className="text-xl font-bold text-white">
-                  Cal 874 plant
-                </h3>
+                <h3 className="text-xl font-bold text-white">Cal 874 plant</h3>
                 <p className="text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Alias, laudantium?
@@ -297,7 +289,7 @@ const Home = () => {
                 <img
                   src="./images/Image2.png"
                   alt="Customer"
-                  className="w-14 h-14 rounded-full object-cover border"
+                  className="w-14 h-14 rounded-full object-cover"
                 />
                 <div>
                   <h3 className="text-lg font-bold text-white">Maln Josi</h3>
@@ -323,7 +315,7 @@ const Home = () => {
                 <img
                   src="./images/Image2.png"
                   alt="Customer"
-                  className="w-14 h-14 rounded-full object-cover border"
+                  className="w-14 h-14 rounded-full object-cover "
                 />
                 <div>
                   <h3 className="text-lg font-bold text-white">Maln Josi</h3>
@@ -349,7 +341,7 @@ const Home = () => {
                 <img
                   src="./images/Image2.png"
                   alt="Customer"
-                  className="w-14 h-14 rounded-full object-cover border"
+                  className="w-14 h-14 rounded-full object-cover"
                 />
                 <div>
                   <h3 className="text-lg font-bold text-white">Maln Josi</h3>
