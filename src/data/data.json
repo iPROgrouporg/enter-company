@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Dell PowerEdge T40 Server",
+    "desc": "Reliable entry-level server for small business hosting and file storage.",
+    "price": 750,
+    "image": "./images/Image2.png",
+    "rating": 5,
+    "category": "Servers"
+  },
+  {
+    "id": 2,
+    "title": "MikroTik Cloud Router",
+    "desc": "Powerful router for stable internet and network management.",
+    "price": 210,
+    "image": "./images/Image2.png",
+    "rating": 4,
+    "category": "Networking"
+  },
+  {
+    "id": 3,
+    "title": "WD Red Pro NAS HDD 4TB",
+    "desc": "High-performance hard drive designed for 24/7 storage servers.",
+    "price": 180,
+    "image": "./images/Image2.png",
+    "rating": 5,
+    "category": "Storage"
+  },
+  {
+    "id": 4,
+    "title": "Ubiquiti UniFi Access Point",
+    "desc": "Professional Wi-Fi access point with high coverage and speed.",
+    "price": 150,
+    "image": "./images/Image2.png",
+    "rating": 4,
+    "category": "Networking"
+  },
+  {
+    "id": 5,
+    "title": "Lenovo ThinkStation P340",
+    "desc": "Powerful workstation for design, development, and server monitoring.",
+    "price": 950,
+    "image": "./images/Image2.png",
+    "rating": 5,
+    "category": "Computers"
+  },
+  {
+    "id": 6,
+    "title": "APC Smart-UPS 1500VA",
+    "desc": "Uninterruptible power supply to protect your servers from power loss.",
+    "price": 320,
+    "image": "./images/Image2.png",
+    "rating": 5,
+    "category": "Power"
+  },
+  {
+    "id": 7,
+    "title": "Intel Xeon E-2236 Processor",
+    "desc": "High-performance CPU for data centers and virtualization tasks.",
+    "price": 430,
+    "image": "./images/Image2.png",
+    "rating": 4,
+    "category": "Components"
+  },
+  {
+    "id": 8,
+    "title": "Synology NAS DS920+",
+    "desc": "4-bay network storage for backup, file sharing, and small-scale hosting.",
+    "price": 670,
+    "image": "./images/Image2.png",
+    "rating": 5,
+    "category": "Storage"
+  }
+]
