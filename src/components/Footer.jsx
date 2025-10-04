@@ -11,9 +11,9 @@ import { CiMail } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer className="bg-[#0e0e0e] text-gray-300 pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <div className="flex items-center gap-2 mb-4">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
+        <div className="text-center md:text-left">
+          <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
             <img
               src="./images/Logo.svg"
               alt="Logo"
@@ -21,13 +21,13 @@ const Footer = () => {
             />
             <span className="text-xl font-bold text-white">ENTER MCHJ</span>
           </div>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 leading-relaxed">
             ENTER MCHJ – ishlab chiqarish va savdo sohasida faoliyat yurituvchi
             zamonaviy korxona.
           </p>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h4 className="text-white font-semibold mb-4">Navigatsiya</h4>
           <ul className="space-y-2">
             <li>
@@ -60,39 +60,58 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h4 className="text-white font-semibold mb-4">Kontakt</h4>
-          <p className="text-sm flex items-center gap-1">
-            <IoLocationOutline /> Toshkent, O‘zbekiston
-          </p>
-          <p className="text-sm flex items-center gap-1">
-            <FaPhoneAlt /> +998 90 123 45 67
-          </p>
-          <p className="text-sm flex items-center gap-1">
-            <CiMail /> info@entermchj.uz
-          </p>
+          <div className="space-y-2">
+            <p className="text-sm flex justify-center md:justify-start items-center gap-2">
+              <IoLocationOutline className="text-amber-500" /> Toshkent,
+              O‘zbekiston
+            </p>
+            <p className="text-sm flex justify-center md:justify-start items-center gap-2">
+              <FaPhoneAlt className="text-amber-500" /> +998 90 123 45 67
+            </p>
+            <p className="text-sm flex justify-center md:justify-start items-center gap-2">
+              <CiMail className="text-amber-500" /> info@entermchj.uz
+            </p>
+          </div>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h4 className="text-white font-semibold mb-4">Bizni kuzating</h4>
-          <div className="flex gap-4">
-            <a href="https://facebook.com" className=" transition">
+          <div className="flex justify-center md:justify-start gap-5">
+            <a
+              href="https://facebook.com"
+              className="hover:text-amber-500 transition-colors"
+              target="_blank"
+            >
               <FaFacebook size={20} />
             </a>
-            <a href="https://instagram.com" className=" transition">
+            <a
+              href="https://instagram.com"
+              className="hover:text-amber-500 transition-colors"
+              target="_blank"
+            >
               <FaInstagram size={20} />
             </a>
-            <a href="https://t.me" className=" transition">
+            <a
+              href="https://t.me"
+              className="hover:text-amber-500 transition-colors"
+              target="_blank"
+            >
               <FaTelegram size={20} />
             </a>
           </div>
         </div>
       </div>
 
-      <div className=" mt-10 pt-6 text-center text-sm text-white">
+      <div className="mt-10 pt-6 text-center text-sm text-white border-t border-gray-700">
         © {new Date().getFullYear()} ENTER MCHJ. Barcha huquqlar himoyalangan. |{" "}
         <span>
-          <a href="https://Iprogroup.org" target="_blank">
+          <a
+            href="https://Iprogroup.org"
+            target="_blank"
+            className="text-amber-500 hover:underline"
+          >
             IPRO GROUP SUPPORT
           </a>
         </span>
